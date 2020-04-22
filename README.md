@@ -1,0 +1,1 @@
+blog: https://medium.com/@hajaekwon
