@@ -1,4 +1,4 @@
-blog: https://medium.com/@hajaekwon
+blog: https://tangoblog.tistory.com/
 
 ### TODO
 
