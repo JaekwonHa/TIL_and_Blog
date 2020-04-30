@@ -1,4 +1,4 @@
-# DO407 Automation with Ansible
+# RedHat - DO407 Automation with Ansible 교육 후기
 
 
 * 일정
