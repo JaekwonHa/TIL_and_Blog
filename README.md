@@ -2,6 +2,8 @@
 
 * Ansible
   * [RedHat - DO407 Automation with Ansible 교육 후기](/ansible/DO407_Automation_with_Ansible.md)
+* Encrypt
+  * [암호화 기본 지식](/encrypt/draft.basic_encrypt.md)
 * Git
   * [도구간 Git squash merge 비교 (Git Cli, Intellij, SourceTree)](/git/git_squash_merge_part1.md)
 * Network
