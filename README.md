@@ -18,3 +18,9 @@
 * 목차 자동 생성기
 * auto create medium post by git hook
 * spell check before push
+* 애버노트에 있는거 글로 옮기기
+* 서평
+* command
+* intelij 개발환경 구축 (workflow 는 part 2)
+* memory 증가에 대한 블로그 글 작성
+* 동일한 테스트 코드를 junit4, junit5, junit5-kotlin 으로 비교해보기
