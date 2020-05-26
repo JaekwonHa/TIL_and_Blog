@@ -3,7 +3,7 @@
 * Ansible
   * [RedHat - DO407 Automation with Ansible 교육 후기](/ansible/DO407_Automation_with_Ansible.md)
 * Encrypt
-  * [암호화 기본 지식](/encrypt/draft.basic_encrypt.md)
+  * (draft) [암호화 기본 지식](/encrypt/draft.basic_encrypt.md)
 * Git
   * [도구간 Git squash merge 비교 (Git Cli, Intellij, SourceTree)](/git/git_squash_merge_part1.md)
 * Network
@@ -12,6 +12,7 @@
   * [[TDD 리팩토링 by 자바지기 박재성님] 정리](/개발방법론/TDD_by_javajigi.md)
 * ProblemSolving
   * [LeetCode 1. Two Sum](/problem_solving/LeetCode_1_TWO_SUM.md)
+  * (draft) [Egg Drop Puzzle](/problem_solving/draft.egg_drop_puzzle.md)
 
 ### TODO
 
