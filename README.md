@@ -12,7 +12,7 @@
   * [[TDD 리팩토링 by 자바지기 박재성님] 정리](/개발방법론/TDD_by_javajigi.md)
 * ProblemSolving
   * [LeetCode 1. Two Sum](/problem_solving/LeetCode_1_TWO_SUM.md)
-  * (draft) [Egg Drop Puzzle](/problem_solving/draft.egg_drop_puzzle.md)
+  * [Egg Drop Puzzle](/problem_solving/egg_drop_puzzle.md)
   * (dfrat) [소문난 칠공주](/problem_solving/draft.ACMICPC_1094.md)
 
 ### TODO
