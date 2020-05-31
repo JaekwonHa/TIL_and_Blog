@@ -2,6 +2,8 @@
 
 * Ansible
   * [RedHat - DO407 Automation with Ansible 교육 후기](/ansible/DO407_Automation_with_Ansible.md)
+* Database
+  * [결합칼럼 인덱스와 단일칼럼 인덱스](/database/db_story_guru_1.md)
 * Encrypt
   * (draft) [암호화 기본 지식](/encrypt/draft.basic_encrypt.md)
 * Git
