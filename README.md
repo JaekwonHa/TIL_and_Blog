@@ -12,6 +12,8 @@
   * (draft) [TCP 소켓이 쓰러지지 않아](/network/draft.TCP_소켓이_쓰러지지않아)
 * 개발방법론
   * [[TDD 리팩토링 by 자바지기 박재성님] 정리](/개발방법론/TDD_by_javajigi.md)
+  * (draft) [TDD,Refactoring,CleanCode8기](/개발방법론/draft.TDD,Refactoring,CleanCode8기.md)
+  * (draft) [실용주의 프로그래머 정리](/개발방법론/draft.실용주의_프로그래머.md)
 * ProblemSolving
   * [LeetCode 1. Two Sum](/problem_solving/LeetCode_1_TWO_SUM.md)
   * [Egg Drop Puzzle](/problem_solving/egg_drop_puzzle.md)
