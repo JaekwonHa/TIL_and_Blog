@@ -18,6 +18,9 @@
   * [LeetCode 1. Two Sum](/problem_solving/LeetCode_1_TWO_SUM.md)
   * [Egg Drop Puzzle](/problem_solving/egg_drop_puzzle.md)
   * (dfrat) [소문난 칠공주](/problem_solving/draft.ACMICPC_1094.md)
+* Spring
+  * (draft) [우아한CRUD by 정상혁,이명현님](/spring/draft.우아한CRUD.md)
+  * [Spring JDK Dynamic Proxy vs CGLIB 차이점](/spring/spring-proxy.md)
 
 ### TODO
 
