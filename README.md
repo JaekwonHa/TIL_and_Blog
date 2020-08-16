@@ -21,6 +21,7 @@
 * Spring
   * (draft) [우아한CRUD by 정상혁,이명현님](/spring/draft.우아한CRUD.md)
   * [Spring JDK Dynamic Proxy vs CGLIB 차이점](/spring/spring-proxy.md)
+  * [xml to java config 기반으로 전환](/spring/spring-migration-xml-to-java.md)
 
 ### TODO
 
