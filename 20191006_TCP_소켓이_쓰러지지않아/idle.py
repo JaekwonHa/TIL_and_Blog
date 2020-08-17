@@ -4,7 +4,6 @@ import time
 import select
 
 import tcp_util
-import io
 import sys
 
 DEBUG = False

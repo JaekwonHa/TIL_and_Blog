@@ -40,7 +40,7 @@ Ctrl+\ SIGQUIT core dump를 남기고 프로세스를 종료시킨다.
 SOCK_STREAM : TCP
 SOCK_DGRAM : UDP
 
-<img src="../../assets/tcp_socket_no_die_1.png" witdh=400 height=300>
+<img src="../blog/assets/tcp_socket_no_die_1.png" witdh=400 height=300>
 
 client : close -> syn-sent -> established
 server : close -> listen -> syn-recv -> established
@@ -101,7 +101,7 @@ c ——X———> s
 
 c -> P. -> s   : 버려짐
 
-<img src="../../assets/tcp_socket_no_die_2.png">
+<img src="../blog/assets/tcp_socket_no_die_2.png">
 
 Recv-Q 란 소켓이 처리해야할 데이터 중 아직 처리하지 못한 데이터
 
