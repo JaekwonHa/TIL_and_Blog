@@ -18,9 +18,9 @@
             1. select 절의 칼럼이 index에 없어서 발생
             2. 결과와 같은 데이터를 랜덤 엑세스
             3. 다음과 같은 쿼리 변경으로 추출 랜덤 엑세스를 줄일 수 있다
-                1. ![img](../assets/db_story_guru_1_1.png)
-                    1. 카드번호=1111이 1000건이라면 인라인뷰는 1000번의 랜덤 엑세스 발생
-                2. ![img](../assets/db_story_guru_1_2.png) 
+                1.  ![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/db_story_guru_1_1.png?raw=true)
+                    1.  카드번호=1111이 1000건이라면 인라인뷰는 1000번의 랜덤 엑세스 발생
+                2.  ![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/db_story_guru_1_2.png?raw=true)
                     1. 5번의 랜덤 엑세스 발생
                     2. rowid 는 index에 존재
         3. 정렬 랜덤 엑세스

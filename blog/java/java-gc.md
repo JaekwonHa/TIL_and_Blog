@@ -10,7 +10,7 @@
 
 ![img](https://github.com/HaJaeKwon/blog/blob/master/assets/jvm-option-space.png?raw=true)
 
-| 출처: https://code-factory.tistory.com/48
+> 출처: https://code-factory.tistory.com/48
 
 
 1. Eden
@@ -25,7 +25,7 @@
    1. Old 영역이 가득차게 되면 Full GC가 발생합니다.
    2. Young generation 보다 크게 할당되며 크기가 큰 만큼 GC가 적게 발생하지만, 오래 수행될 수 있습니다.
 
-| 모든 GC는 stop-the-world를 발생시킬 수 있습니다. 참고: https://plumbr.io/blog/garbage-collection/minor-gc-vs-major-gc-vs-full-gc
+> 모든 GC는 stop-the-world를 발생시킬 수 있습니다. 참고: https://plumbr.io/blog/garbage-collection/minor-gc-vs-major-gc-vs-full-gc
 
 ## JVM option
 
@@ -87,7 +87,7 @@
 
 제가 쓰는 옵션 중, GC 로그 형태에 대해 영향을 미치는 옵션은 4가지입니다. 단계별로 gc.log에 남는 형태를 봐보겠습니다.
 
-| 참고 소스코드: https://www.baeldung.com/java-verbose-gc
+> 참고 소스코드: https://www.baeldung.com/java-verbose-gc
 
 ```shell
 # 아래 커맨드로 실행
@@ -192,6 +192,18 @@ End of program!
 ```
 
 GC 전후에 메모리 사용량 변화가 아주 자세히 출력됩니다. young generation 영역에서 from, to 둘 중 하나는 반드시 비어있고, GC가 발생할 때 마다 eden이 비워지고, old generation에 데이터가 쌓이는 것을 볼 수 있습니다.
+
+## jdk8 에서의 추천 옵션
+
+이제 알게된 정보를 바탕으로 jvm 옵션을 다시 준다면 아래와 같이 주는 것이 좋을 것 같습니다.
+
+```shell
+-Xms1g -Xmx2g -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+CMSClassUnloadingEnabled -XX:+DisableExplicitGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/crashes/my-heap-dump.hprof -Xloggc:gc.log.2021-01-19
+```
+
+GC 로그는 상세정보까지만 출력하고, CMSInitiatingOccupancyFraction 옵션은 제거 했습니다. 추가로 OOM 발생시 Heap dump 파일을 생성하도록 하는 옵션을 추가했습니다.
+
+> 참고로 GC Log 로테이트 옵션이 있는데, 사용하기에는 몇가지 문제점들이 있으니 참고하시길 바랍니다. [https://blog.tier1app.com/2019/01/30/try-to-avoid-xxusegclogfilerotation/](https://blog.tier1app.com/2019/01/30/try-to-avoid-xxusegclogfilerotation/)
 
 ## 정리
 

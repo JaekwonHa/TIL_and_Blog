@@ -12,7 +12,7 @@ C/C++의 sizeof() 함수가 있는 것과 달리 Java에서는 Object 크기를 
 
 ## Primitive type
 
-| [primitive type Size 참고](https://www.w3schools.com/java/java_data_types.asp)
+> [primitive type Size 참고](https://www.w3schools.com/java/java_data_types.asp)
 
 * 공식적인 size를 가지고 있습니다. 
 * null 값이 존재하지 않습니다.
@@ -38,11 +38,11 @@ Hotspot JVM에서 heap 메모리에 저장되는 object는 다음과 같은 특�
 
 ![img](https://github.com/HaJaeKwon/blog/blob/master/assets/java_get_size_1.png?raw=true)
 
-| 출처: https://www.slideshare.net/jaxLondonConference/from-java-code-to-java-heap-understanding-the-memory-usage-of-your-app-chris-bailey-ibm-27886078
+> 출처: https://www.slideshare.net/jaxLondonConference/from-java-code-to-java-heap-understanding-the-memory-usage-of-your-app-chris-bailey-ibm-27886078
 
 ## Object, Integer, Long, , String 크기 비교
 
-| 타입별 크기 비교 코드 출처: https://www.infoworld.com/article/2077496/java-tip-130--do-you-know-your-data-size-.html
+> 타입별 크기 비교 코드 출처: https://www.infoworld.com/article/2077496/java-tip-130--do-you-know-your-data-size-.html
 
 `1.8.0_272, x86_64: "AdoptOpenJDK 8"` 환경에서 타입별 크기를 계산했습니다.
 
@@ -102,7 +102,7 @@ Empty String이 24 bytes부터 시작해서 1개가 추가될때 48 bytes로 커
 
 ## 가설1. String 객체에는 hash, count, offset, char[] 참조 변수가 있고, char[] 변수가 따로 존재한다.
 
-| 참고 p19 : https://www.slideshare.net/jaxLondonConference/from-java-code-to-java-heap-understanding-the-memory-usage-of-your-app-chris-bailey-ibm-27886078
+> 참고 p19 : https://www.slideshare.net/jaxLondonConference/from-java-code-to-java-heap-understanding-the-memory-usage-of-your-app-chris-bailey-ibm-27886078
 
 래퍼런스를 참고하여 String 크기를 계산해보면, 12(header) + 4(hash) + 4(count) + 4(offset) + 4(char[] 참조 변수) = 28 bytes. char[] 변수 크기가 16(array) + n * 2(char type size)입니다.
 
