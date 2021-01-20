@@ -12,6 +12,7 @@
 
 | 출처: https://code-factory.tistory.com/48
 
+
 1. Eden
    1. Object가 새로 생성되었을때 Eden 영역에 저장
    2. Eden 영역이 가득차게되면 MinorGC가 발생합니다.
@@ -191,6 +192,14 @@ End of program!
 ```
 
 GC 전후에 메모리 사용량 변화가 아주 자세히 출력됩니다. young generation 영역에서 from, to 둘 중 하나는 반드시 비어있고, GC가 발생할 때 마다 eden이 비워지고, old generation에 데이터가 쌓이는 것을 볼 수 있습니다.
+
+## 정리
+
+사실 Spring 개발을 하면서 JVM 옵션까지 튜닝해가면서 기능을 개발했던 적은 없었습니다. 그것보다는 테스트하기 더 쉬운 코드, 결합도가 낮고, 응집도가 높은 코드, 잘 설계된 코드를 만들기 위해서 더 노력했습니다.
+
+하지만 Production 환경에 배포하고 실제 서비스를 하다보면 다양한 운영 상황들이 생기고, 그것들이 꼭 내가 짠 코드의 버그에서만 생기는 것은 아닙니다.
+
+Java와 JVM의 동작방식을 알고, 어떤 옵션이 적용되었는지, GC 로그에 남는 정보를 해석할 수 있고, 혹은 heap dump를 생성하고, 어떻게 분석하는지 안다면 Java 개발자로써 많은 도움이 될 것입니다.
 
 ## 참고
 * [https://www.baeldung.com/java-verbose-gc](https://www.baeldung.com/java-verbose-gc)
