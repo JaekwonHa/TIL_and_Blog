@@ -8,7 +8,7 @@
 
 우선 JVM에서 메모리 영역을 어떻게 관리하고 있는지 알아야 합니다. 모든 내용은 jdk8 기준으로 작성되었습니다.
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/jvm-option-space.png?raw=true)
+![img](https://github.com/HaJaeKwon/blog/blob/master/assets/java-memory-space.png?raw=true)
 
 > 출처: https://code-factory.tistory.com/48
 
@@ -30,6 +30,10 @@
 ## JVM option
 
 제가 주로 쓰고 있었던 JVM option은 다음과 같습니다.
+
+```shell
+-server -verbosegc -verbose:gc -Xms1g -Xmx2g -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:CMSInitiatingOccupancyFraction=80 -XX:+CMSClassUnloadingEnabled -XX:+DisableExplicitGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -Xloggc:gc.log.2021-01-19
+```
 
 * -server
   * 프로세스가 오랜시간 살아있게되는 서버 어플리케이션에 적합한 방법입니다. 반대 방법으로는 -client 옵션이 있습니다.
@@ -222,3 +226,4 @@ Java와 JVM의 동작방식을 알고, 어떤 옵션이 적용되었는지, GC �
 * [https://perfectacle.github.io/2019/05/11/jvm-gc-advanced/](https://perfectacle.github.io/2019/05/11/jvm-gc-advanced/)
 * [http://daplus.net/java-jvm-%ED%94%8C%EB%9E%98%EA%B7%B8-cmsclassunloadingenabled%EB%8A%94-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EB%AC%B4%EC%97%87%EC%9D%84%ED%95%A9%EB%8B%88%EA%B9%8C/](http://daplus.net/java-jvm-%ED%94%8C%EB%9E%98%EA%B7%B8-cmsclassunloadingenabled%EB%8A%94-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EB%AC%B4%EC%97%87%EC%9D%84%ED%95%A9%EB%8B%88%EA%B9%8C/)
 * [https://www.baeldung.com/jvm-parameters](https://www.baeldung.com/jvm-parameters)
+* [https://wasking.tistory.com/13](https://wasking.tistory.com/13)
