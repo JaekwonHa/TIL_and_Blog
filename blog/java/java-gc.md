@@ -8,7 +8,7 @@
 
 우선 JVM에서 메모리 영역을 어떻게 관리하고 있는지 알아야 합니다. 모든 내용은 jdk8 기준으로 작성되었습니다.
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/java-memory-space.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/java-memory-space.png?raw=true)
 
 > 출처: https://code-factory.tistory.com/48
 

@@ -36,7 +36,7 @@ Hotspot JVM에서 heap 메모리에 저장되는 object는 다음과 같은 특�
 * array 배열은 16 bytes가 필요합니다. object 공간 12 bytes + array length 공간 4 bytes
 * object 크기는 항상 8의 배수만큼의 byte 공간을 차지합니다. '8-byte alignment', 'object alignment' 라고 합니다. 8의 배수만큼의 byte 공간을 맞춰주기 위해 padding 공간을 붙여줍니다.
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/java_get_size_1.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/java_get_size_1.png?raw=true)
 
 > 출처: https://www.slideshare.net/jaxLondonConference/from-java-code-to-java-heap-understanding-the-memory-usage-of-your-app-chris-bailey-ibm-27886078
 

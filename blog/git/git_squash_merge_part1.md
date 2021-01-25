@@ -1,10 +1,10 @@
 # 도구간 Git squash merge 비교 (Git Cli, Intellij, SourceTree)
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_background.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_background.png?raw=true)
 
 서비스가 여러 프로젝트와 연관되고 다수의 사람들이 기능 개발에 참여하게 되면 아래와 같은 Git Commit Graph를 만나기 시작합니다.
 
-![여러 프로젝트와 연관된 서비스의 git commit history](https://github.com/HaJaeKwon/blog/blob/master/assets/git_commit_graph.png?raw=true)여러 프로젝트와 연관된 서비스의 git commit history
+![여러 프로젝트와 연관된 서비스의 git commit history](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_commit_graph.png?raw=true)여러 프로젝트와 연관된 서비스의 git commit history
 
 이 중에서 쉽게 적용해 볼 수 있는 것이 Merge 방식을 변경하는 것입니다.
 
@@ -40,7 +40,7 @@ git checkout master
 git merge --squash feature/A
 ```
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_squash_merge_by_cli.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_squash_merge_by_cli.png?raw=true)
 
 feature/A branch 에서 2개의 커밋을 생성 후 master branch 에서 squash merge하는 방식입니다.
 
@@ -48,19 +48,19 @@ feature/A branch 에서 2개의 커밋을 생성 후 master branch 에서 squash
 
 master branch 에서 동일한 작업으로 feature/B branch를 생성해준 뒤 **VCS > Git > Merge Changes…** 기능을 사용합니다.
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_squash_merge_by_intellij_step1.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_squash_merge_by_intellij_step1.png?raw=true)
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_squash_merge_by_intellij_step2.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_squash_merge_by_intellij_step2.png?raw=true)
 
 #### 3. SourceTree
 
 지금 진행하고 있는 예제에서는 fast-forward merge가 일어나기 때문에 SourceTree에서 squash merge를 하기 위해서는 merge 후에 commit message를 rebase로 정리해줘야 합니다.
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_squash_merge_by_sourcetree_step1.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_squash_merge_by_sourcetree_step1.png?raw=true)
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_squash_merge_by_sourcetree_step2.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_squash_merge_by_sourcetree_step2.png?raw=true)
 
-![img](https://github.com/HaJaeKwon/blog/blob/master/assets/git_squash_merge_by_sourcetree_step3.png?raw=true)
+![img](https://github.com/JaekwonHa/TIL_and_Blog/blob/master/blog/assets/git_squash_merge_by_sourcetree_step3.png?raw=true)
 
 하위 요소 대화식 재배치(rebase -i)를 통해서 필요한 commit 메시지만 남기고 수정하는 방식으로 squash merge를 적용해볼 수 있습니다.
 
